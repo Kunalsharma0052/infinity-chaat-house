@@ -11,7 +11,6 @@ const Header = () => {
   const router = useRouter();
   const [isScrolling, setIsScrolling] = useState(false);
   const changePath = (path: string) => {
-    // alert(path)
     router.push(path);
   };
 
@@ -19,7 +18,6 @@ const Header = () => {
     if (typeof window !== "undefined") {
       const handleScroll = () => {
         const currentScroll = window.pageYOffset;
-        // setScrollPosition(currentScroll);
         setIsScrolling(currentScroll > 0);
       };
 
